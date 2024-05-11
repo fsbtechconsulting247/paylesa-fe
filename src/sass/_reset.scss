@@ -20,7 +20,7 @@ body,
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: colr.$black;
+    color: colr.$black-var-1;
 }
 
 ol li,
@@ -30,7 +30,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; 
 }
 
 button {

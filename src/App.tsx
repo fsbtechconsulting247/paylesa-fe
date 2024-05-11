@@ -1,8 +1,9 @@
+import Header from "./components/ui/header/Header";
 
 function App() {
   return (
 
-    <><h1>Hello</h1></>
+    <Header />
   );
 }
 
