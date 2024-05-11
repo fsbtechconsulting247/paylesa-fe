@@ -23,5 +23,5 @@
   "include": [
     "src"
   ],
-"files": ["globals.d.ts"]
+"files": ["custom.d.ts"]
 }

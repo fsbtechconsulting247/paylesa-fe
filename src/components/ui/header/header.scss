@@ -1,0 +1,75 @@
+@use "../../../sass/color" as colr;
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-topBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: colr.$white-smoke;
+
+    font-size: 1.3rem;
+
+    & strong {
+        font-weight: 500;
+    }
+
+    & a {
+        font-weight: 600;
+        color: darken(colr.$green-var-1, 20);
+        background-color: lighten(colr.$green-var-1, 40);
+        padding: .5rem 1rem;
+        border-radius: 999px;
+    }
+}
+
+.header-mainNav {
+    background-color: #2D2D2D;
+}
+
+.header-mainNav__inner {
+    display: flex;
+    padding: 0 8rem;
+
+    &>div:first-child {
+        flex: 30%;
+    }
+
+    &>div:last-child {
+        flex: 70%;
+        border: 1px solid;
+    }
+}
+
+.header-mainNav__inner>div:first-child {
+    display: flex;
+
+    &>button {
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        border: 1px solid transparent;
+        border-right: 0.8px solid #fff;
+    }
+
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-right: 0.8px solid #fff;
+}
