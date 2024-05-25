@@ -53,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-react": "7.34.1",
+    "msw": "^2.3.0",
     "prettier": "3.2.5"
   }
 }
