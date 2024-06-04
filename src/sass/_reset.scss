@@ -33,6 +33,10 @@ a {
     color: inherit; 
 }
 
-button {
+a, button{
+    cursor: pointer;
+}
+
+input, a, button{
     font-family: inherit;
 }

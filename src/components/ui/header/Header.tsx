@@ -15,32 +15,32 @@ const Header = () => {
       <nav className="header-mainNav">
         <div className="header-mainNav__inner">
           <div>
-            <div className="header-logo">
+            <Link to={"/"} className="header-logo">
               <img src={brandLogo} alt="Brand Logo" />
-            </div>
+            </Link>
             <button type="button">Brand new</button>
             <button type="button">Pre-owned</button>
           </div>
           <div>
             <div className="header-inputBar">
-              <input type="text" />
-              <Icon icon="prime:search" />
+              <input type="text" placeholder="Search for items and brands"/>
+              <Icon icon="iconoir:search" />
             </div>
-            <div>
-              <button type="button">
+            <div className="accountButton__block">
+              <button type="button" className="headerMain__item">
                 <Icon icon="fa6-regular:user" />
                 <span>Account</span>
               </button>
             </div>
-            <Link to={"/#"}>
-              <Icon icon="fluent:chat-help-24-regular" />
+            <Link to={"/#"} className="headerMain__item">
+            <Icon icon="tdesign:chat-bubble-help" />
               <span>Help</span>
             </Link>
-            <Link to={"/#"}>
-              <Icon icon="fluent:chat-help-24-regular" />
+            <Link to={"/#"} className="headerMain__item">
+            <Icon icon="heroicons-outline:heart" />
               <span>Wish list</span>
             </Link>
-            <Link to={"/#"}>
+            <Link to={"/#"} className="headerMain__item">
               <Icon icon="ri:shopping-cart-line" />
               <span>Cart</span>
             </Link>

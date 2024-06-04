@@ -29,7 +29,7 @@
 }
 
 .header-mainNav {
-    background-color: #2D2D2D;
+    background-color: colr.$black-var-4;
 }
 
 .header-mainNav__inner {
@@ -42,7 +42,33 @@
 
     &>div:last-child {
         flex: 70%;
-        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>.header-inputBar{
+            flex-basis: 75%;
+            max-width: 75%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &>input{
+                flex-basis: 100%;
+                max-width: 100%;
+                padding: 1rem 2rem;
+                border-radius: 999px;
+                border: 1px solid transparent;
+
+                &::placeholder{
+                    font-weight: 500;
+                }
+            }
+            &>svg{
+                position: absolute;
+                right: 1rem;
+                font-size: 2.5rem;
+            }
+        }
     }
 }
 
@@ -59,7 +85,7 @@
         justify-content: center;
         padding: 0 2rem;
         border: 1px solid transparent;
-        border-right: 0.8px solid #fff;
+        border-right: 0.8px solid #ffffff5e;
     }
 
 }
@@ -71,5 +97,25 @@
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-right: 0.8px solid #fff;
+    border-right: 0.8px solid #ffffff5e;
+}
+
+.accountButton__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerMain__item{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        font-weight: 500;
+        font-size: 1.15rem;
+        color: colr.$white-smoke;
+        background-color: transparent;
+        border: 1px solid transparent;
+        &>svg{
+            font-size: 2rem;
+        }
 }
