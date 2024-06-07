@@ -48,6 +48,72 @@ const Header = () => {
         </div>
       </nav>
       <nav className="header-bottomNav">
+          <ul className="header-bottomNav__list">
+            <li>
+              <button type="button" className="allItem__toggleBtn">
+                <Icon icon="ci:hamburger-md" />
+                <span>All items</span>
+              </button>
+            </li>
+           <li>
+           <Link to={"/#"}>
+           <Icon icon="ic:round-devices-other" />
+            <span>
+            Pre-owned Devices
+            </span>
+            </Link>
+           </li>
+           <li>
+           <Link to={"/#"}>
+           <Icon icon="mingcute:watch-line" />
+           <span>
+           Smart watches
+           </span>
+            </Link>
+           </li>
+           <li>
+           <Link to={"/#"}>
+           <Icon icon="fluent:phone-32-regular" />
+           <span>
+           Smartphones
+           </span>
+            </Link>
+           </li>
+           <li>
+           
+           <Link to={"/#"}>
+           <Icon icon="fluent:phone-32-regular" />
+          <span> iPhones</span>
+            </Link>
+           </li>
+           <li>
+           <Link to={"/#"}>
+           <Icon icon="fluent:phone-32-regular" />
+           Samsung phones
+            </Link>
+           </li>
+           <li>
+           <Link to={"/#"}>
+           <Icon icon="fluent:laptop-16-regular" />
+          <span>
+          Windows Laptops
+          </span>
+            </Link>
+           </li>
+
+           <li>
+            <Link to={"/#"}>
+            <Icon icon="fluent:laptop-16-regular" />
+              <span>MacBook</span>
+            </Link>
+           </li>
+           <li>
+            <Link to={"/#"}>
+            <Icon icon="material-symbols:earbuds-battery-outline" />
+              <span>Accessories</span>
+              </Link>
+           </li>
+          </ul>
       </nav>
     </header>
   )
