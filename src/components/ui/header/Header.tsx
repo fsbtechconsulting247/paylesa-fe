@@ -14,38 +14,40 @@ const Header = () => {
       </div>
       <nav className="header-mainNav">
         <div className="header-mainNav__inner">
-          <div>
-            <Link to={"/"} className="header-logo">
+          <div className="header-mainNav__innerBlockOne">
+            <Link to={"/"} className="header-logo header-mainNav__home">
               <img src={brandLogo} alt="Brand Logo" />
             </Link>
-            <button type="button">Brand new</button>
-            <button type="button">Pre-owned</button>
+            <Link to="#" className="header-mainNav__innerBlockOne__link">About us</Link>
+            <Link to="#" className="header-mainNav__innerBlockOne__link">Trade-in</Link>
           </div>
-          <div>
+          <div className="header-mainNav__innerBlockTwo">
             <div className="header-inputBar">
               <input type="text" placeholder="Search for items and brands"/>
-              <Icon icon="iconoir:search" />
+              <Icon icon="bx:search-alt-2" />
             </div>
             <div className="accountButton__block">
-              <button type="button" className="headerMain__item">
+              <button type="button" className="header-mainNav__innerBlockTwo__button">
                 <Icon icon="fa6-regular:user" />
                 <span>Account</span>
               </button>
             </div>
-            <Link to={"/#"} className="headerMain__item">
+            <Link to={"/#"} className="header-mainNav__innerBlockTwo__link">
             <Icon icon="tdesign:chat-bubble-help" />
               <span>Help</span>
             </Link>
-            <Link to={"/#"} className="headerMain__item">
+            <Link to={"/#"} className="header-mainNav__innerBlockTwo__link">
             <Icon icon="heroicons-outline:heart" />
               <span>Wish list</span>
             </Link>
-            <Link to={"/#"} className="headerMain__item">
+            <Link to={"/#"} className="header-mainNav__innerBlockTwo__link">
               <Icon icon="ri:shopping-cart-line" />
               <span>Cart</span>
             </Link>
           </div>
         </div>
+      </nav>
+      <nav className="header-bottomNav">
       </nav>
     </header>
   )
