@@ -1,0 +1,14 @@
+@use "../sass/variables" as var;
+@use "../sass/color" as colr;
+//typography
+.fw-6{
+    font-weight: var.$weight-6;
+}
+
+.link-hover{
+    transition: color 250ms ease-in;
+
+    &:hover{
+        color: colr.$orange-var-1;
+        }
+}

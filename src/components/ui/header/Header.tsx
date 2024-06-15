@@ -2,8 +2,12 @@ import "./header.scss";
 import { Icon } from "@iconify/react";
 import brandLogo from "../../../assets/svgs/paylesa-logo.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+
+  const [showAccountMenu, setShowAccountMenu] = useState(false);
+
   return (
     <header className="header-main">
       <div className="header-topBar">
@@ -27,10 +31,40 @@ const Header = () => {
               <Icon icon="bx:search-alt-2" />
             </div>
             <div className="accountButton__block">
-              <button type="button" className="header-mainNav__innerBlockTwo__button">
+              <button type="button" className={`header-mainNav__innerBlockTwo__button ${showAccountMenu ? "activeButton" : ""}`} onClick={() => setShowAccountMenu(prev=>!prev)}>
                 <Icon icon="fa6-regular:user" />
                 <span>Account</span>
               </button>
+              <div className={`accountMenu ${showAccountMenu ? "menu-active" : ""}`}>
+                <div className="accountMenu__topItem">
+                  <Link to="/">
+                  <Icon icon="tabler:login-2" />
+                    <span className="fw-6">Sign In</span>
+                  </Link>
+                  <div>
+                    <span>New here?</span>
+                    <Link to="/#" className="fw-6 link-hover">Register now</Link>
+                  </div>
+                </div>
+                <ul className="accountMenu__list">
+                  <li className="link-hover">
+                    <Icon icon="fa6-regular:user" />
+                    <Link to="/#">My Account</Link>
+                  </li>
+                  <li className="link-hover">
+                  <Icon icon="gravity-ui:box" />
+                    <Link to="/#">My Orders</Link>
+                  </li>
+                  <li className="link-hover">
+                  <Icon icon="tabler:bell" />
+                    <Link to="/#">Buy Alerts</Link>
+                  </li>
+                  <li className="accountMenu__logout link-hover">
+                  <Icon icon="gravity-ui:power" />
+                    <button type="button" className="link-hover">Log out</button>
+                  </li>
+                </ul>
+              </div>
             </div>
             <Link to={"/#"} className="header-mainNav__innerBlockTwo__link">
             <Icon icon="tdesign:chat-bubble-help" />

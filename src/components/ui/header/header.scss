@@ -108,6 +108,7 @@
 .accountButton__block{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header-mainNav__innerBlockTwo__link, 
@@ -124,6 +125,10 @@
         &>svg{
             font-size: 2rem;
         }
+}
+
+.header-mainNav__innerBlockTwo__button.activeButton{
+    color: colr.$orange-var-1;
 }
 
 //header bottom navigations & interactivity
@@ -160,7 +165,7 @@
         transition: background-color 250ms ease-in;
 
         &:hover{
-            background-color: lighten(colr.$orange-var-1, 20);
+            background-color: lighten(colr.$orange-var-1, 5);
         }
        
     }
@@ -175,4 +180,78 @@
     &>li>button>svg{
            font-size: var.$fs-lg-v3;
     }
+}
+
+//Account Menu
+.accountMenu{
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: var.$primary-shadow;
+    border-radius: var.$bd-rad-v1;
+    width: 22rem;
+    font-size: var.$fs-sm;
+    transition: transform 250ms ease-in;
+    transform: translateX(500%);
+    &.menu-active{
+        transform: translateX(0);
+    }
+
+    & svg{
+        font-size: var.$fs-lg-v2;
+    }
+}
+
+.accountMenu__topItem{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid lighten(colr.$black-var-2, 60);
+
+    &>a{
+        border-radius: 999px;
+        padding: 1.5rem 2rem;
+        background-color: lighten($color: colr.$gray-var-1, $amount: 3);
+        transition: background-color 250ms ease-in;
+        &:hover{
+            background-color: colr.$gray-var-2;
+        }
+    }
+
+    &>a, &>div{
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+   
+}
+
+.accountMenu__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &>li{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
+
+        & svg{
+            font-size: var.$fs-lg-v2;
+        }
+
+    }
+}
+
+
+.accountMenu__logout{
+    &>button{
+        background-color: transparent;
+        border: 1px solid transparent;
+        }
 }
