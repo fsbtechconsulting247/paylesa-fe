@@ -1,9 +1,8 @@
-import Header from "./components/ui/header/Header";
+import Home from "./screens/home/home";
 
 function App() {
   return (
-
-    <Header />
+    <Home />
   );
 }
 

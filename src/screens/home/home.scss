@@ -1,0 +1,40 @@
+@use "../../sass/variables" as var;
+
+//Hero
+.hero{
+    padding-top: 2rem;
+}
+
+.heroContent{
+    display: flex;
+    gap: 1%;
+    height: 38rem;
+}
+
+.static-imgBlock{
+    border-radius: var.$bd-rad-v2;
+   overflow: hidden;
+}
+
+.static-imgBlock{
+    &>a>img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.heroContent__sliderBlock{
+    flex-basis: 65%;
+    max-width: 65%;
+}
+
+.static-imgBlock{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    &>a{
+        height: 100%;
+    }
+   
+
+}
