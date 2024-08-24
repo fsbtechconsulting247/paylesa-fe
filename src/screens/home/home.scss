@@ -43,11 +43,19 @@
 
 
 //USP
+.usp {
+    margin: 8rem 0;
+}
 
 .usp-list {
     display: flex;
-    padding: 6rem 0;
     gap: 1.5rem;
+    padding: 4rem 0 0;
+}
+
+.usp-heading {
+    text-align: center;
+    color: colr.$gray-var-4;
 }
 
 .usp-item {
@@ -80,6 +88,10 @@
 }
 
 //CATEGORIES
+.categories {
+    margin: 8rem 0;
+}
+
 .categories>h2 {
     text-align: center;
     color: colr.$gray-var-4;
@@ -88,7 +100,7 @@
 .category-listing {
     display: flex;
     justify-content: center;
-    padding: 6rem 0;
+    padding: 4rem 0 0;
     gap: 2rem;
 
 }

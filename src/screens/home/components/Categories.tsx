@@ -19,7 +19,7 @@ const Categories = () => {
                             </div>
                             <div>
                                 <Icon icon="mage:shield-check-fill" />
-                                <span>50 certified listings</span>
+                                <span>50 certified pre-owned listings</span>
                             </div>
                         </Link>
                     </li>
@@ -31,7 +31,7 @@ const Categories = () => {
                             </div>
                             <div>
                                 <Icon icon="mage:shield-check-fill" />
-                                <span>50 certified listings</span>
+                                <span>50 certified pre-owned listings</span>
                             </div>
                         </Link>
                     </li>
@@ -43,7 +43,7 @@ const Categories = () => {
                             </div>
                             <div>
                                 <Icon icon="mage:shield-check-fill" />
-                                <span>50 certified listings</span>
+                                <span>50 certified pre-owned listings</span>
                             </div>
                         </Link>
                     </li>
@@ -55,7 +55,7 @@ const Categories = () => {
                             </div>
                             <div>
                                 <Icon icon="mage:shield-check-fill" />
-                                <span>50 certified listings</span>
+                                <span>50 certified pre-owned listings</span>
                             </div>
                         </Link>
                     </li>

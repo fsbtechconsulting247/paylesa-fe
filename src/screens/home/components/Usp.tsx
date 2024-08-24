@@ -6,8 +6,10 @@ import deliveryIllustrator from "../../../assets/svgs/delivery.svg";
 
 const Usp = () => {
     return (
-        <div className="usp">
-            <div className="container">
+
+        <div className="container">
+            <div className="usp">
+                <h2 className="usp-heading heading-2">Why Paylesa?</h2>
                 <ul className="usp-list">
                     <li className="usp-item">
                         <span>
@@ -56,6 +58,7 @@ const Usp = () => {
                 </ul>
             </div>
         </div>
+
     )
 }
 
