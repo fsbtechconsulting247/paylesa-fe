@@ -1,19 +1,40 @@
 @use "../sass/variables" as var;
 @use "../sass/color" as colr;
+
 //typography
-.fw-6{
+.fw-6 {
     font-weight: var.$weight-6;
 }
 
-.link-hover{
+.link-hover {
     transition: color 250ms ease-in;
 
-    &:hover{
+    &:hover {
         color: colr.$orange-var-1;
-        }
+    }
 }
 
-.container{
+.container {
     max-width: 98%;
     margin: 0 auto;
+}
+
+.bgg-green-100 {
+    background-image: linear-gradient(transparent, #cce6d7);
+}
+
+.bgg-pink-100 {
+    background-image: linear-gradient(transparent, #ecd9e8);
+}
+
+.bgg-red-100 {
+    background-image: linear-gradient(transparent, #f4d3d0);
+}
+
+.bgg-indigo-100 {
+    background-image: linear-gradient(transparent, #ccdbe7);
+}
+
+.bgg-cyan-100 {
+    background-image: linear-gradient(transparent, #d7e0f3);
 }
