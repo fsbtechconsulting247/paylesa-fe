@@ -1,5 +1,6 @@
 import Header from "../../components/ui/header/Header"
 import Categories from "./components/Categories"
+import FeaturedBrands from "./components/FeaturedBrands"
 import Hero from "./components/Hero"
 import Usp from "./components/Usp"
 import "./home.scss"
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Usp />
       <Categories />
+      <FeaturedBrands />
     </>
   )
 }

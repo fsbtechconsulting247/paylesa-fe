@@ -19,6 +19,7 @@
     margin: 0 auto;
 }
 
+
 .bgg-green-100 {
     background-image: linear-gradient(transparent, #cce6d7);
 }
@@ -41,4 +42,6 @@
 
 .heading-2 {
     font-size: var.$fs-lg-v4;
+    text-align: center;
+    color: colr.$gray-var-4;
 }
